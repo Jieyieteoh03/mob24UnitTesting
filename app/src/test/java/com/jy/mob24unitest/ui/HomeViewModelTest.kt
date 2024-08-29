@@ -14,7 +14,7 @@ import org.junit.Test
 @OptIn(ExperimentalCoroutinesApi::class)
 class HomeViewModelTest {
 
-    val viewModel = HomeViewModel()
+    private val viewModel = HomeViewModel()
     @Before
     fun setup() {
         val testDispatcher = UnconfinedTestDispatcher()
