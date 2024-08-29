@@ -14,7 +14,6 @@ jobs:
       - android/run-tests:
           test-commands: ./gradlew testDebug
       - android/save-gradle-cache
-      -
 workflows:
   build-and-test:
     jobs:
