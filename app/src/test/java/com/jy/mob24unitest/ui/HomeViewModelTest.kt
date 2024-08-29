@@ -32,6 +32,6 @@ class HomeViewModelTest {
     @Test
     fun test_state_flow() = runTest {
         viewModel.loadMessage()
-        assertEquals(viewModel.msg.values, "HelloStateFlow")
+        assertEquals(viewModel.msg.value, "HelloStateFlow")
     }
 }
