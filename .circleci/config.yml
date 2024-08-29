@@ -10,6 +10,7 @@ jobs:
      tag: "2024.08"
     steps:
       - checkout
+      - run: chmod +x ./gradlew
       - android/restore-gradle-cache
       - android/run-tests:
           test-command: ./gradlew testDebug
